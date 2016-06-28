@@ -19,9 +19,8 @@ public class DomainObject {
         this.id = id;
     }
 
-    @Override
     public String toString() {
-        return "id=" + id;
+        return new StringBuilder("# ").append(getId()).toString();
     }
     
     @Override
